@@ -1,5 +1,5 @@
 {% set name = "PyTurboJPEG" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 09688a93331281e566569b4d313e1d1a058ca32ccae1a2473847a10e4ca2f2a7
+  sha256: 7569a3fe1b8291ba2b71285fd814fe2f7c9b11f81d2952068899e4cfbe79c70a
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A Python wrapper of libjpeg-turbo for decoding and encoding JPEG image.'
+  summary: A Python wrapper of libjpeg-turbo for decoding and encoding JPEG image.
   doc_url: https://github.com/lilohuang/PyTurboJPEG/
   dev_url: https://github.com/lilohuang/PyTurboJPEG/
 
