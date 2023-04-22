@@ -1,11 +1,11 @@
-About pyturbojpeg
-=================
+About pyturbojpeg-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyturbojpeg-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lilohuang/PyTurboJPEG/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyturbojpeg-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python wrapper of libjpeg-turbo for decoding and encoding JPEG image.
 
