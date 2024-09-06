@@ -1,5 +1,5 @@
 {% set name = "PyTurboJPEG" %}
-{% set version = "1.7.5" %}
+{% set version = "1.7.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5dd5f40dbf4159f41b6abaa123733910e8b1182df562b6ddb768991868b487d3
+  sha256: 8c22c16f1bdc0761cf6a29a69e295f9a402c27cfac994c9b2af6c7458a4ebf88
 
 build:
   noarch: python
@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - python >=2
+    - setuptools
     - pip
   run:
     - python >=2
