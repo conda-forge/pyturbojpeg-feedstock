@@ -27,7 +27,11 @@ requirements:
     - numpy
     - libjpeg-turbo
 
-tests: []
+tests:
+  - python:
+    python_version: ${{ python_min }}.*
+    pip_check: true
+
 about:
   license: MIT
   license_file: LICENSE
