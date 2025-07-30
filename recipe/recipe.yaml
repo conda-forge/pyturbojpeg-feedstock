@@ -29,8 +29,8 @@ requirements:
 
 tests:
   - python:
-    python_version: ${{ python_min }}.*
-    pip_check: true
+      python_version: ${{ python_min }}.*
+      pip_check: true
 
 about:
   license: MIT
