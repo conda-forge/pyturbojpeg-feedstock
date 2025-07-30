@@ -28,11 +28,13 @@ requirements:
     - libjpeg-turbo
 
 tests:
-  - script:
-      - run_test.py
-    requirements:
+  - requirements:
       run:
         - python ${{ python_min }}.*
+    script:
+      interpreter: python
+      file: run_test.py
+
 
 about:
   license: MIT
