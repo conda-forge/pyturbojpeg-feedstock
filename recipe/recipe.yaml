@@ -31,6 +31,7 @@ tests:
   - requirements:
       run:
         - python ${{ python_min }}.*
+        - requests
     script:
       interpreter: python
       file: run_test.py
