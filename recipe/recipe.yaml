@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: PyTurboJPEG
-  version: 1.8.2
+  version: "2.1.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: b7d9625bbb2121b923228fc70d0c2b010b386687501f5b50acec4501222e152b
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | lower }}-${{ version }}.tar.gz
+  sha256: 15e785afe516214cdea9c52e6a27b9971eef0bbc4a6e1bcfb7208e48b13b4565
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
