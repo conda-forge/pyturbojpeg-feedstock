@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: PyTurboJPEG
-  version: "2.4.0"
+  version: "2.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | lower }}-${{ version }}.tar.gz
-  sha256: 7d632be4e74c652be26bf8093501ed5784e916195735e76131def285c4d5843e
+  sha256: 572e74886110e0bd85f8a95a188f1cda94c4a5f0222ff38a22d7e12faeb9844b
 
 build:
   number: 0
